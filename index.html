@@ -18,12 +18,28 @@
   body {
   color: white; 
   font-family: Roboto, sans-serif;
+  width: 100%;
   }
+      
+   /* Primary Header Container */ 
+  #headersection {
+    	position: relative;
+      background-color: green;
+      height: 200px; 
+    	width: 100%;
+      }   
   
+  #primaryheader {
+    padding-top: 50px;
+    text-align: center;
+  }    
+  
+   /* Sections */ 
   #section0, #section1, #section2, #section3, #section4 {
   height: 500px;  
   }
   
+   /* Secondary Headers */ 
   #header0, #header1, #header2, #header3, #header4 {
     height: 100px;
     position: relative;
@@ -32,16 +48,18 @@
     background-color: blue;
   }
   
+  /* Section 0 */ 
   #section0 {
     position: relative;
     background-color: #b8b51d;
   }
   
   #section0 img {
+    float: left;
     position: absolute;
     left: 0;
     top: 200;
-    width: 100%;
+    max-width: 100%;
     height: auto;
   }
   
@@ -54,15 +72,16 @@
       top: 45;
     }
   
-  
+  /* Section 1  */
   #section1 {
+    position: relative; 
     background-color: #423711;
   }
       
     #section1 img {
     position: absolute;
     left: 320;
-    top: 995;
+    top: 120;
     width: 50%;
     height: auto;
   }
@@ -73,32 +92,91 @@
       clear: both;
       position: absolute;
       left: 40;
-      top: 900;
+      top: 100;
     }
       
+  /* Section 2  */     
   #section2 {
+    position: relative;
     background-color: #bbb5a7;
   }
+    
+      #container2 {
+      width: 100%;
+      background-color: transparent;
+      clear: both;
+      position: absolute;
+      left: 0;
+      top: 190;
+    }
+      
+      #block2A {
+      width: calc(100% / 3);
+      background-color: blue;
+      height: 200px;
+      display: inline;
+      float: left;
+      padding-left: 10px;
+      padding-right: 10px;
+      padding-top: 10px;
+      padding-bottom: 10px;
+    }
+      
+      #block2B {
+      width: calc(100% / 3);
+      background-color: red;
+      height: 200px;
+      display: inline;
+      float: left;
+      padding-left: 10px;
+      padding-right: 10px;
+      padding-top: 10px;
+      padding-bottom: 10px;
+    }
+      
+      #block2C {
+      width: calc(100% / 3);
+      background-color: white;
+      height: 200px;
+      display: inline;
+      float: left;
+      padding-left: 10px;
+      padding-right: 10px;
+      padding-top: 10px;
+      padding-bottom: 10px;
+    }
+   
+      /* Section 3  */ 
     #section3 {
     background-color: #8b2e25;
+    position: relative;
   }
+      
+      /* Section 4  */ 
     #section4 {
     background-color: #787254;
+    position: relative;
   }
   
 </style>
 </head>
   
 <body>
+  <!--Header Section -->
+  <div id="headersection">
+    <!--Navigation Menu -->
+    <a href="#section0">0</a>
+    <a href="#section1">1</a>
+    <a href="#section2">2</a>
+    <a href="#section3">3</a>
+    <a href="#section4">4</a> 
+    
+    <!--Title -->
+    <div id="primaryheader">
+    <h1>Zoey's Website</h1>
+  </div>
+ </div>
   
-<a href="#section0">0</a>
-<a href="#section1">1</a>
-<a href="#section2">2</a>
-<a href="#section3">3</a>
-<a href="#section4">4</a>  
-<h2>
-One-page scroll site template</h2>
-
   <!--Section 0 -->
  <div id="header0">
    <h1>Education Background</h1>
@@ -142,11 +220,23 @@ One-page scroll site template</h2>
 </div>
   
 <div id="section2">
-Your amazing content goes here!
+    <div id="container2">
+      <h1>Magazine</h1>
+      <div id="block2A">
+         anim id est laborum.
+      </div>
+      <div id="block2B">
+        Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?
+      </div>
+      <div id="block2C">
+        Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+      </div>
+    </div>
 </div>
  
   <!--Section 3 -->
   <div id="header3">
+    <h1>Favourite Projects</h1>
 </div>
   
 <div id="section3">
