@@ -1,6 +1,8 @@
-<html>
-<body>
-<head>
+<!DOCTYPE html>
+<html lang="en-ca">
+  <head>
+    <title>Zoey's Website</title>
+    <meta charset="utf-8">
 <style>
   h2 {
   color: black;
@@ -8,20 +10,43 @@
   
   body {
   color: white; 
+  font-family: Roboto, sans-serif;
   }
   
   #section0, #section1, #section2, #section3, #section4 {
-  height: 700px;  
+  height: 500px;  
   }
   
   #header0, #header1, #header2, #header3, #header4 {
     height: 100px;
+    position: relative;
+    padding-top: 20px;
+    text-align: center;
     background-color: blue;
   }
   
   #section0 {
+    position: relative;
     background-color: #b8b51d;
   }
+  
+  #section0 img {
+    position: absolute;
+    left: 0;
+    top: 200;
+    width: 100%;
+    height: auto;
+  }
+  
+  #container0 {
+      width: 500px;
+      background-color: transparent;
+      clear: both;
+      position: absolute;
+      left: 100;
+      top: 45;
+    }
+  
   #section1 {
     background-color: #423711;
   }
@@ -35,9 +60,11 @@
     background-color: #787254;
   }
   
-  
 </style>
 </head>
+  
+<body>
+  
 <a href="#section0">0</a>
 <a href="#section1">1</a>
 <a href="#section2">2</a>
@@ -46,31 +73,42 @@
 <h2>
 One-page scroll site template</h2>
 
-  
+  <!--Section 0 -->
  <div id="header0">
+   <h1>Education Background</h1>
 </div>
    
 <div id="section0">
+    <div id="container0">
+      Before coming to the University of Waterloo, I attended
+      KCI -- a high school in Kitchener.In my high school years, I took graphic design courses in
+      grades 10 and 11, where I was introducted to Adobe Illustrator
+      and Photoshop. These classes among the most enjoyable 
+      I had ever taken. It became obvious to me then that I wanted
+     to pursue something creative in my post-seconday studies. 
+  </div>
+   <img src="KCI.jpg" alt="KCI">
 </div>
   
-  
+<!--Section 1 -->
    <div id="header1">
+     <h1>Why GBDA?</h1>
 </div>
   
 <div id="section1">
 Your amazing content goes here!
 </div>
   
-  
-  
+  <!--Section 2 -->
   <div id="header2">
+    <h1>Category</h1>
 </div>
   
 <div id="section2">
 Your amazing content goes here!
 </div>
  
-  
+  <!--Section 3 -->
   <div id="header3">
 </div>
   
