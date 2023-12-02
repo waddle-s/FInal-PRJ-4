@@ -121,20 +121,18 @@ header {
     background-color: #FB8B91;
   }
     
-      #container2 {
-      width: 100%;
-      background-color: transparent;
-      clear: both;
-      position: absolute;
-      left: 0;
-      top: 190;
+    #container2 {
+    width: 100%;
+    background-color: transparent;
+    clear: both;
+    position: relative; 
     }
       
       #block2A {
       width: calc(100% / 3);
       background-color: #2E2151;
       height: 310px;
-      display: inline;
+      display: inline-block;  
       float: left;
       padding-left: 10px;
       padding-right: 10px;
@@ -146,7 +144,7 @@ header {
       width: calc(100% / 3);
       background-color: #372C60;
       height: 310px;
-      display: inline;
+      display: inline-block;  
       float: left;
       padding-left: 10px;
       padding-right: 10px;
@@ -158,7 +156,7 @@ header {
       width: calc(100% / 3);
       background-color: #433A75;
       height: 310px;
-      display: inline;
+      display: inline-block; 
       float: left;
       padding-left: 10px;
       padding-right: 10px;
@@ -175,7 +173,7 @@ header {
   margin: 0 auto 10px; /* Center image and add space below */
 }
       
-      /* ----------------- Section 3 ----------------- */ 
+  /* ----------------- Section 3 ----------------- */ 
     #section3 {
     background-color: #8b2e25;
     position: relative;
@@ -219,7 +217,7 @@ article {
     <a href="#section4">4</a> 
     </header>
   
-  <!--Section 0 -->
+  <!-----------------Section 0 ----------------->
  <div id="header0">
    <h1>Education Background</h1>
 </div>
@@ -235,7 +233,7 @@ article {
     </div>
 </div>
   
-<!--Section 1 -->
+<!-----------------Section 1 ----------------->
 <div id="header1">
     <h1>Why GBDA?</h1>
 </div>
@@ -259,14 +257,13 @@ article {
     </div>
 </div>
   
-  <!--Section 2 -->
+  <!-----------------Section 2 ----------------->
   <div id="header2">
     <h1>Other Interests</h1>
 </div>
   
 <div id="section2">
     <div id="container2">
-      
       <!--Block A -->
       <div id="block2A">
          <img src="KCI.jpg" alt="Image A">
@@ -288,12 +285,13 @@ article {
         <img src="KCI.jpg" alt="Image A">
         <h1>French</h1>
         I've been a french immersion kid most of my life. Learning a
-        new language is very fulfilling, and lots of fun.  
+        new language is very fulfilling, and lots of fun. 
       </div>
     </div>
 </div>
  
-  <!--Section 3 -->
+  <!-----------------Section 3 ----------------->
+  <!-----Remember to cite code from w3schools----->
   <div id="header3">
     <h1>Favourite Projects</h1>
 </div>
@@ -312,8 +310,17 @@ article {
     <h1>London</h1>
     <p>London is the capital city of England. It is the most populous city in the  United Kingdom, with a metropolitan area of over 13 million inhabitants.</p>
     <p>Standing on the River Thames, London has been a major settlement for two millennia, its history going back to its founding by the Romans, who named it Londinium.</p>
+  
+  
+  
+  
+  
   </article>
 </section>
+  
+  
+  
+  
 </div>
 
 </body>
