@@ -21,7 +21,7 @@
   width: 100%;
   }
       
-   /* Primary Header Container */ 
+/* Primary Header */ 
 header {
   background-color: #FB8B91;
   padding: 30px;
@@ -32,8 +32,7 @@ header {
       * {
   box-sizing: border-box;
 }
-      
-      
+           
    /* Sections */ 
   #section0, #section1, #section2, #section3, #section4 {
   height: 500px;  
@@ -44,58 +43,79 @@ header {
     height: 100px;
     position: relative;
     padding-top: 20px;
+    padding-bottom: 100px;
     text-align: center;
     background-color: #CE494E;
   }
   
-  /* Section 0 */ 
-  #section0 {
+/* ----------------- Section 0 ----------------- */
+#section0 {
     position: relative;
     background-color: #281A47;
-  }
-  
-  #section0 img {
-    float: left;
-    position: absolute;
-    left: 0;
-    top: 200;
-    max-width: 100%;
-    height: auto;
-  }
-  
-  #container0 {
-      width: 500px;
-      background-color: transparent;
-      clear: both;
-      position: absolute;
-      left: 100;
-      top: 45;
-    }
-  
-  /* Section 1  */
-  #section1 {
-    position: relative; 
-    background-color: #2E2151;
-  }
-      
-    #section1 img {
-    position: absolute;
-    left: 320;
-    top: 120;
+}
+
+#container0 {
+    width: 100%;
+    background-color: transparent;
+    clear: both;
+    position: relative;
+}
+
+#content0 {
     width: 50%;
+    float: left;
+    color: white;
+    padding: 20px;
+}
+
+#imageContainer0 {
+    width: 50%;
+    height: 500px;
+    float: right;
+    overflow: hidden; /* Ensure the image does not overflow the container */
+}
+
+#section0 img {
+    width: 100%;
+    height: 100%; /* Maintain the aspect ratio */
+    object-fit: cover; /* Ensure the image covers the container while maintaining aspect ratio */
+    opacity: 0.5;
+}
+  
+/* ----------------- Section 1 ----------------- */
+#section1 {
+    position: relative;
+    background-color: #2E2151;
+}
+
+#container1 {
+    width: 100%;
+    background-color: transparent;
+    clear: both;
+    position: relative;
+}
+
+#content1 {
+    width: 40%;
+    float: left;
+    color: white;
+    padding-left: 40px;
+  	padding-top: 70px;
+}
+
+#imageContainer1 {
+    width: 50%;
+    float: right;
+  	padding-top: 70px;
+  	padding-right: 60px;
+}
+
+#section1 img {
+    width: 100%;
     height: auto;
-  }
-     
-   #container1 {
-      width: 250px;
-      background-color: transparent;
-      clear: both;
-      position: absolute;
-      left: 40;
-      top: 100;
-    }
+}
       
-  /* Section 2  */     
+  /* ----------------- Section 2 ----------------- */     
   #section2 {
     position: relative;
     background-color: #FB8B91;
@@ -146,27 +166,42 @@ header {
       padding-bottom: 10px;
     }
       
-#block2A img,
-#block2B img,
-#block2C img {
+   #block2A img,
+   #block2B img,
+   #block2C img {
   max-width: 100%;
   height: auto;
   display: block;
   margin: 0 auto 10px; /* Center image and add space below */
 }
       
-   
-      /* Section 3  */ 
+      /* ----------------- Section 3 ----------------- */ 
     #section3 {
     background-color: #8b2e25;
     position: relative;
   }
       
-      /* Section 4  */ 
-    #section4 {
-    background-color: #787254;
-    position: relative;
-  }
+nav {
+  float: left;
+  width: 30%;
+  height: 500px; 
+  background: #433A75;
+  padding: 20px;
+}
+
+/* Style the list inside the menu */
+nav ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+article {
+  float: left;
+  padding: 20px;
+  width: 70%;
+  background-color: #FB8B91;
+  height: 500px; 
+}
       
 </style>
 </head>
@@ -188,37 +223,40 @@ header {
  <div id="header0">
    <h1>Education Background</h1>
 </div>
-   
+
 <div id="section0">
     <div id="container0">
-      Before coming to the University of Waterloo, I attended
-      KCI -- a high school in Kitchener.In my high school years, I took graphic design courses in
-      grades 10 and 11, where I was introducted to Adobe Illustrator
-      and Photoshop. These classes among the most enjoyable 
-      I had ever taken. It became obvious to me then that I wanted
-     to pursue something creative in my post-seconday studies. 
-  </div>
-   <img src="KCI.jpg" alt="KCI">
+        <div id="content0">
+            Before coming to the University of Waterloo, I attended KCI -- a high school in Kitchener. In my high school years, I took graphic design courses in grades 10 and 11, where I was introduced to Adobe Illustrator and Photoshop. These classes among the most enjoyable I had ever taken. It became obvious to me then that I wanted to pursue something creative in my post-secondary studies.
+        </div>
+        <section id="imageContainer0">
+            <img src="KCI.jpg" alt="KCI">
+        </section>
+    </div>
 </div>
   
 <!--Section 1 -->
-   <div id="header1">
-     <h1>Why GBDA?</h1>
+<div id="header1">
+    <h1>Why GBDA?</h1>
 </div>
-  
+
 <div id="section1">
-  
-<div id="container1">
-  <h1>The Perfect Mix</h1>
-      Before coming to the University of Waterloo, I attended
-      KCI -- a high school in Kitchener.In my high school years, I took graphic design courses in
-      grades 10 and 11, where I was introducted to Adobe Illustrator
-      and Photoshop. These classes among the most enjoyable 
-      I had ever taken. It became obvious to me then that I wanted
-     to pursue something creative in my post-seconday studies. 
-  </div>
-  
-  <img src="desk design.png" alt="Desk Design">
+    <div id="container1">
+        <div id="content1">
+            <h1>The Perfect Mix</h1>
+            Before coming to the University of Waterloo, 
+            I attended KCI -- a high school in Kitchener. 
+            In my high school years, I took graphic design 
+            courses in grades 10 and 11, where I was introduced
+            to Adobe Illustrator and Photoshop. These classes 
+            were among the most enjoyable I had ever taken. 
+            It became obvious to me then that I wanted to 
+            pursue something creative in my post-secondary studies.
+        </div>
+        <section id="imageContainer1">
+            <img src="desk design.png" alt="Desk Design">
+        </section>
+    </div>
 </div>
   
   <!--Section 2 -->
@@ -232,16 +270,25 @@ header {
       <!--Block A -->
       <div id="block2A">
          <img src="KCI.jpg" alt="Image A">
+        <h1>Nintendo</h1>
+        My favourite games are Super Mario Odyssey, 
+        The Legend of Zelda (BOTW + TOTK), and Mario Kart!
       </div>
       
       <!--Block B -->
       <div id="block2B">
       <img src="KCI.jpg" alt="Image A">
+        <h1>Writing</h1>
+          Whether it be creative or academic, I've always found
+          writing enjoyable and relaxing. 
       </div>
       
       <!--Block C -->
       <div id="block2C">
         <img src="KCI.jpg" alt="Image A">
+        <h1>French</h1>
+        I've been a french immersion kid most of my life. Learning a
+        new language is very fulfilling, and lots of fun.  
       </div>
     </div>
 </div>
@@ -252,7 +299,21 @@ header {
 </div>
   
 <div id="section3">
-Your amazing content goes here!
+<section>
+  <nav>
+    <ul>
+      <li><a href="#">London</a></li>
+      <li><a href="#">Paris</a></li>
+      <li><a href="#">Tokyo</a></li>
+    </ul>
+  </nav>
+  
+  <article>
+    <h1>London</h1>
+    <p>London is the capital city of England. It is the most populous city in the  United Kingdom, with a metropolitan area of over 13 million inhabitants.</p>
+    <p>Standing on the River Thames, London has been a major settlement for two millennia, its history going back to its founding by the Romans, who named it Londinium.</p>
+  </article>
+</section>
 </div>
 
 </body>
