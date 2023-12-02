@@ -7,11 +7,11 @@
     <style>
   
   h2 {
-  color: black;
+  color: #B43035;
   }
       
   h1 {
-  color: black;
+  color: #281A47;
   font-family: Lucida Console;
   }
   
@@ -22,18 +22,18 @@
   }
       
    /* Primary Header Container */ 
-  #headersection {
-    	position: relative;
-      background-color: green;
-      height: 200px; 
-    	width: 100%;
-      }   
+header {
+  background-color: #FB8B91;
+  padding: 30px;
+  text-align: center;
+  font-size: 35px;
+}   
   
-  #primaryheader {
-    padding-top: 50px;
-    text-align: center;
-  }    
-  
+      * {
+  box-sizing: border-box;
+}
+      
+      
    /* Sections */ 
   #section0, #section1, #section2, #section3, #section4 {
   height: 500px;  
@@ -45,13 +45,13 @@
     position: relative;
     padding-top: 20px;
     text-align: center;
-    background-color: blue;
+    background-color: #CE494E;
   }
   
   /* Section 0 */ 
   #section0 {
     position: relative;
-    background-color: #b8b51d;
+    background-color: #281A47;
   }
   
   #section0 img {
@@ -75,7 +75,7 @@
   /* Section 1  */
   #section1 {
     position: relative; 
-    background-color: #423711;
+    background-color: #2E2151;
   }
       
     #section1 img {
@@ -98,7 +98,7 @@
   /* Section 2  */     
   #section2 {
     position: relative;
-    background-color: #bbb5a7;
+    background-color: #FB8B91;
   }
     
       #container2 {
@@ -112,8 +112,8 @@
       
       #block2A {
       width: calc(100% / 3);
-      background-color: blue;
-      height: 200px;
+      background-color: #2E2151;
+      height: 310px;
       display: inline;
       float: left;
       padding-left: 10px;
@@ -124,8 +124,8 @@
       
       #block2B {
       width: calc(100% / 3);
-      background-color: red;
-      height: 200px;
+      background-color: #372C60;
+      height: 310px;
       display: inline;
       float: left;
       padding-left: 10px;
@@ -136,8 +136,8 @@
       
       #block2C {
       width: calc(100% / 3);
-      background-color: white;
-      height: 200px;
+      background-color: #433A75;
+      height: 310px;
       display: inline;
       float: left;
       padding-left: 10px;
@@ -145,6 +145,16 @@
       padding-top: 10px;
       padding-bottom: 10px;
     }
+      
+#block2A img,
+#block2B img,
+#block2C img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 0 auto 10px; /* Center image and add space below */
+}
+      
    
       /* Section 3  */ 
     #section3 {
@@ -157,25 +167,22 @@
     background-color: #787254;
     position: relative;
   }
-  
+      
 </style>
 </head>
   
 <body>
   <!--Header Section -->
-  <div id="headersection">
+ <header>
+  <h2>Zoey Wadsworth</h2>
+
     <!--Navigation Menu -->
     <a href="#section0">0</a>
     <a href="#section1">1</a>
     <a href="#section2">2</a>
     <a href="#section3">3</a>
     <a href="#section4">4</a> 
-    
-    <!--Title -->
-    <div id="primaryheader">
-    <h1>Zoey's Website</h1>
-  </div>
- </div>
+    </header>
   
   <!--Section 0 -->
  <div id="header0">
@@ -221,15 +228,20 @@
   
 <div id="section2">
     <div id="container2">
-      <h1>Magazine</h1>
+      
+      <!--Block A -->
       <div id="block2A">
-         anim id est laborum.
+         <img src="KCI.jpg" alt="Image A">
       </div>
+      
+      <!--Block B -->
       <div id="block2B">
-        Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?
+      <img src="KCI.jpg" alt="Image A">
       </div>
+      
+      <!--Block C -->
       <div id="block2C">
-        Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+        <img src="KCI.jpg" alt="Image A">
       </div>
     </div>
 </div>
@@ -242,12 +254,6 @@
 <div id="section3">
 Your amazing content goes here!
 </div>
-  
-  <div id="header4">
-</div>
-  
-<div id="section4">
-Your amazing content goes here!
-</div>
+
 </body>
 </html>
