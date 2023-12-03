@@ -47,6 +47,20 @@ header {
     text-align: center;
     background-color: #CE494E;
   }
+      
+           /* Simplified Navigation Menu */
+    nav {
+      text-align: center;
+      background: #433A75;
+      padding: 10px;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin: 0 15px;
+    }
+      
   
 /* ----------------- Section 0 ----------------- */
 #section0 {
@@ -179,7 +193,7 @@ header {
     position: relative;
   }
       
-nav {
+#section3 nav {
   float: left;
   width: 30%;
   height: 500px; 
@@ -188,8 +202,9 @@ nav {
 }
 
 /* Style the list inside the menu */
-nav ul {
+#section3 nav ul {
   list-style-type: none;
+  text-align: left;
   padding: 0;
 }
 
@@ -213,15 +228,16 @@ article {
 <body>
   <!--Header Section -->
  <header>
-  <h2>Zoey Wadsworth</h2>
-
-    <!--Navigation Menu -->
-    <a href="#section0">0</a>
-    <a href="#section1">1</a>
-    <a href="#section2">2</a>
-    <a href="#section3">3</a>
-    <a href="#section4">4</a> 
-    </header>
+  <h2>Zoey Wadsworth</h2>  
+  </header>
+  
+  <!--Nagivation Menu -->
+   <nav>
+    <a href="#section0">Education</a>
+    <a href="#section1">GBDA</a>
+    <a href="#section2">Interests</a>
+    <a href="#section3">Projects</a>
+  </nav>
   
   <!-----------------Section 0 ----------------->
  <div id="header0">
@@ -310,6 +326,7 @@ article {
 <div id="section3">
 <section>
   <nav>
+     <h1>Check them out!</h1>
     <ul>
       <li><a href="https://acrobat.adobe.com/id/urn:aaid:sc:VA6C2:c575ef92-e761-40b7-a665-dca7e27217e8" target="_blank">Infographic</a></li>
       <li><a href="https://youtu.be/8EKFJF008A4" target="_blank">Short film</a></li>
