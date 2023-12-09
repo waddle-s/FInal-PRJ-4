@@ -51,10 +51,10 @@ header {
 }
            
    /* Sections */ 
-  #section0, #section1, #section2, #section3, #section4 {
+  #section0, #section1, #section2, #section3 {
   height: 500px;  
   }
-  
+      
    /* Secondary Headers */ 
   #header0, #header1, #header2, #header3 {
     height: 100px;
@@ -121,6 +121,7 @@ header {
 #section1 {
     position: relative;
     background-color: #2E2151;
+    overflow: hidden;
 }
 
 #container1 {
@@ -153,9 +154,13 @@ header {
   /* ----------------- Section 2 ----------------- */     
   #section2 {
     position: relative;
-    background-color: #FB8B91;
+    background-color: #FB8B91;  
+    height: auto !important;
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
   }
-    
+      
     #container2 {
     width: 100%;
     background-color: transparent;
@@ -341,26 +346,42 @@ width: 100%;
     <div id="container2">
       <!--Block A -->
       <div id="block2A">
-         <img src="KCI.jpg" alt="Image A">
+         <img src="Mario.jpg" alt="Mario">
         <h1>Nintendo</h1>
-        <p> My favourite games are Super Mario Odyssey, 
-          The Legend of Zelda (BOTW + TOTK), and Mario Kart!</p>
+        <p> The second I used the family Wii as a kid, it was over for me.
+          As a current Switch owner, my favourite games are Super Mario Odyssey, 
+          The Legend of Zelda (BOTW + TOTK), and Mario Kart!
+          Some honorable mentions would be Metriod Dread,
+          Animal Crossing, and, of course, Super Smash Bros
+        (which would likely be higher up
+        if I wasn't so bad at it). </p>
       </div>
       
       <!--Block B -->
       <div id="block2B">
-      <img src="KCI.jpg" alt="Image A">
+      <img src="Typing.jpg" alt="Writing">
         <h1>Writing</h1>
-          <p>Whether it be creative or academic, I've always found
-            writing enjoyable and relaxing.</p> 
+          <p>I actually enjoy writing 10-page essays; I recognize
+            I am probably in the minority here. I understand
+        that there is a general consensus among students that
+        writing for academic purposes is monotonous and annoying.
+        While I don't necessarily disagree, I find it relaxing—
+        it can be a nice repreive from other genres of work. I also
+        love to write creatively, though I don't do it as much
+        as I'd like to.</p> 
       </div>
       
       <!--Block C -->
       <div id="block2C">
-        <img src="KCI.jpg" alt="Image A">
+        <img src="French.jpg" alt="France Flag">
         <h1>French</h1>
         <p>I've been a french immersion kid most of my life. Learning a
-        new language is very fulfilling, and lots of fun. </p>
+        new language is very fulfilling, and lots of fun. I earned
+        my DELF certification (level B2) in my last year of highschool,
+        and hope to one day speak fluently. University has put
+        a bit of a pause on my development, but I don't intend
+        to abandon the skills I've spent over a decade cultivating—
+        I'm just on a minor hiatus.</p>
       </div>
     </div>
 </div>
