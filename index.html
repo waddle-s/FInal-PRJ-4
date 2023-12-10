@@ -86,6 +86,7 @@ header {
 #section0 {
     position: relative;
     background-color: #281A47;
+    overflow: hidden;
 }
 
 #container0 {
@@ -226,7 +227,7 @@ header {
   padding: 20px;
 }
 
-/* Style the list inside the project menu */
+/* Sidebar + article section */
 #section3 nav ul {
   list-style-type: none;
   text-align: left;
@@ -241,7 +242,7 @@ header {
      height: 500px; 
    }
     
-/* Project Menu Styling */
+/* "Browse Projects" Menu Styling */
     #section3 a {
       color: #EFDADA;
       text-decoration: none;
@@ -258,7 +259,7 @@ header {
     }
       
     #section3 nav a:hover {
-      color: #FB8B91; /* Change the text color on hover */
+      color: #FB8B91; /* text color on hover */
    } 
    
    #section3 nav a:active {
@@ -272,8 +273,26 @@ header {
   form {
       margin: 0; 
       padding: 20px; 
-      text-align: left; /* Align text to the left */
+      text-align: left; 
     }
+       
+    input[type="submit"] {
+      border: none; 
+      padding: 4px 6px;
+      margin-top: 8px;
+      color: #433A75;
+      background-color: #EFDADA; 
+      border-radius: 3px; /* Round the corners by 3px */
+    }
+      
+      input[type="text"] {
+        margin-top: 5px;
+        border: none; 
+        background-color: #EFDADA; 
+        border-radius: 3px; /* Round the corners by 3px */
+      }
+ 
+  /* Table Styling */
       
 table {
   border-collapse: collapse;
@@ -384,6 +403,7 @@ width: 100%;
   
 <div id="section2">
     <div id="container2">
+      
       <!--Block A -->
       <div id="block2A">
          <!--Image by ant2506 https://pixabay.com/photos/
@@ -455,10 +475,12 @@ width: 100%;
       <li><a href="https://youtu.be/8EKFJF008A4" target="_blank">Short film</a></li>
      <li><a href="https://acrobat.adobe.com/id/urn:aaid:sc:va6c2:a0cd9596-d142-4e9f-b946-6fcec733c27c" target="_blank">Magazine</a></li>
     </ul>
+    
 <!--Favourite project form--> 
 <form>
   <label for="favprj">Favourite Project?</label><br>
-  <input type="text" id="favprj" name="favprj">
+  <input type="text" id="favprj" name="favprj"> 
+  <input type="submit" value="Submit">
 </form>  
 
 <!--Contact link-->
