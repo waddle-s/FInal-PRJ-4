@@ -3,15 +3,15 @@
   <head>
     <title>Zoey's Website</title>
     <meta charset="utf-8">
-    
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
-   
-    
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Anton&family=Assistant&display=swap" rel="stylesheet">    
+ 
+<!--Fonts-->   
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+   <link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
+      
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+   <link href="https://fonts.googleapis.com/css2?family=Anton&family=Assistant&display=swap" rel="stylesheet">    
 
     <style>
   
@@ -37,9 +37,8 @@
   margin: 0px;
   }
       
-/* Primary Header */ 
+/* Primary Header (very top of page)*/ 
 header {
-  
   background-color: #FB8B91;
   padding: 30px;
   text-align: center;
@@ -73,7 +72,7 @@ header {
     }
 
     nav a {
-      color: white;
+      color: #EFDADA;
       text-decoration: none;
       margin: 0 15px;
     }
@@ -107,13 +106,13 @@ header {
     width: 50%;
     height: 500px;
     float: right;
-    overflow: hidden; /* Ensure the image does not overflow the container */
+    overflow: hidden; /* ensure the image does not overflow the container */
 }
 
 #section0 img {
     width: 100%;
-    height: 100%; /* Maintain the aspect ratio */
-    object-fit: cover; /* Ensure the image covers the container while maintaining aspect ratio */
+    height: 100%; /* maintain aspect ratio */
+    object-fit: cover; /* ensure the image covers the container while maintaining aspect ratio */
     opacity: 0.5;
 }
   
@@ -136,18 +135,18 @@ header {
     float: left;
     color: white;
     padding-left: 30px;
-  	padding-top: 40px;
+  	padding-top: 30px;
 }
 
 #imageContainer1 {
-    width: 50%;
+    width: 60%;
     float: right;
   	padding-top: 70px;
-  	padding-right: 60px;
+    padding-left: 200px;
 }
 
 #section1 img {
-    width: 100%;
+    width: 80%;
     height: auto;
 }
       
@@ -155,7 +154,7 @@ header {
   #section2 {
     position: relative;
     background-color: #FB8B91;  
-    height: auto !important;
+    height: auto !important; /* use the !important rule to override previous styling rules */
     display: flex;
     justify-content: center;
     align-items: stretch;
@@ -234,24 +233,28 @@ header {
   padding: 0;
 }
 
-article {
-  float: left;
-  padding: 20px;
-  width: 70%;
-  background-color: #FB8B91;
-  height: 500px; 
-}
+    article {
+     float: left;
+     padding: 20px;
+     width: 70%;
+     background-color: #FB8B91;
+     height: 500px; 
+   }
     
 /* Project Menu Styling */
     #section3 a {
-      color: white;
+      color: #EFDADA;
       text-decoration: none;
-      font-size: 20;
+      font-size: 30;
     } 
       
-  #section3 nav a:hover {
-  color: #FB8B91; /* Change the text color on hover */
-}
+    #section3 h1 {
+      font-size: 35;
+    }
+      
+    #section3 nav a:hover {
+      color: #FB8B91; /* Change the text color on hover */
+   }
 
 table {
   border-collapse: collapse;
@@ -287,7 +290,7 @@ width: 100%;
   
   <!-----------------Section 0 ----------------->
  <div id="header0">
-   <h1>Education Background</h1>
+   <h1>Education + Design Background</h1>
 </div>
 
 <div id="section0">
@@ -295,15 +298,26 @@ width: 100%;
         <div id="content0">
           <h1>High School</h1>
             <p>Before coming to the University of Waterloo, 
-          I attended KCI -- a high school in Kitchener. 
+          I attended KCI—a high school in Kitchener. 
           I took graphic design courses in grades 10 and 11,
           where I was introduced to Adobe Illustrator and 
-          Photoshop. These classes among the most enjoyable 
-          I had ever taken. It became obvious to me then 
+          Photoshop. I can credit my interest for design
+          to hese classes. It became obvious to me then 
           that I wanted to pursue something creative in 
-          my post-secondary studies.</p>
+          my post-secondary studies. <br> <br>
+          
+          One of my favourite design projects was the very first one I did. We were tasked
+          with designing a logo. Essentially, we had complete creative liberty,
+          and could make our logo about anything we wanted,
+          which I thought was a good approach for an introductory
+          project. I ended up creating a rat head logo for an 
+          (imaginary, unfortunately named) streetwear brand I dubbed
+          "TRATZ"
+          </p>
         </div>
         <section id="imageContainer0">
+          <!--Image source: https://kitchener.ctvnews.ca/covid-19-
+           outbreak-declared-declared-over-in-same-day-at-kci-1.5679904-->
             <img src="KCI.jpg" alt="KCI">
         </section>
     </div>
@@ -332,6 +346,9 @@ width: 100%;
              variety of fields.</p> 
         </div>
         <section id="imageContainer1">
+          <!--Image by <a href="https://www.freepik.com/free-vector/recruiting-agency-isometric-
+          illustration-manager-recruiter-working-with-computer-3d-cartoon-character-head-hunting
+          -human-resources-department-man-studying-candidate-cv-recruits-search_27399201.htm#page=6&query=isometric%20design&position=8&from_view=search&track=ais&uuid=847abde9-3e34-4fb7-81fb-c351b7255c47">Image by studio4rt</a> on Freepik-->
             <img src="desk design.png" alt="Desk Design">
         </section>
     </div>
@@ -346,6 +363,8 @@ width: 100%;
     <div id="container2">
       <!--Block A -->
       <div id="block2A">
+         <!--Image by ant2506 https://pixabay.com/photos/
+        nintendo-switch-nintendo-switch-2154437/--> 
          <img src="Mario.jpg" alt="Mario">
         <h1>Nintendo</h1>
         <p> The second I used the family Wii as a kid, it was over for me.
@@ -359,6 +378,8 @@ width: 100%;
       
       <!--Block B -->
       <div id="block2B">
+        <!-- Image by <a href="https://www.freepik.com/free-photo/young-writer-taking-notes_12423463
+         .htm#query=writing&position=1&from_view=search&track=sph&uuid=65e4c03e-4c40-46b7-a3b9-3fce29e72aa9">Freepik</a> -->   
       <img src="Typing.jpg" alt="Writing">
         <h1>Writing</h1>
           <p>I actually enjoy writing 10-page essays; I recognize
@@ -373,6 +394,8 @@ width: 100%;
       
       <!--Block C -->
       <div id="block2C">
+        <!--Image by <a href="https://www.freepik.com/free-photo/flag-france_1179355
+        .htm#query=French&position=36&from_view=search&track=sph&uuid=e0b565c3-8f03-4f9d-87d7-a527c9055b86">Image by www.slon.pics</a> on Freepik-->
         <img src="French.jpg" alt="France Flag">
         <h1>French</h1>
         <p>I've been a french immersion kid most of my life. Learning a
@@ -387,7 +410,15 @@ width: 100%;
 </div>
  
   <!-----------------Section 3 ----------------->
-  <!-----Remember to cite code from w3schools----->
+  
+  <!--Code copied from: https://www.w3schools.com/html/tryit.asp?filename=tryhtml_layout_float 
+   Author: w3schools.com 
+   Name: CSS Layout Float 
+   Description: Displays a section layout + sidebar navigation menu with external links
+   Date retrieved: Nov. 30, 2023-->
+  
+<!-- Copied code starts -->
+  
   <div id="header3">
     <h1>Favourite Projects</h1>
 </div>
@@ -404,7 +435,7 @@ width: 100%;
   </nav>
   
   <article>
-    <h2>GBDA assignments are very unique</h2>
+    <h2>The Freedom of GBDA</h2>
     <p>As a GBDA student, I've had the opportunity to work with a
     very expansive library of media. Being introduced to assignments
     that forced me to learn new software and equipment was daunting,
@@ -412,6 +443,8 @@ width: 100%;
     <p>Below, I've breifly detailed some of my favourite projects
     I've done so far. On the left-hand side of the screen, click
     on the links provided to check out my work!</p>
+  
+    <!-- Copied code ends -->
   
    <!-- Table added here -->
       <table border="1">
@@ -441,7 +474,7 @@ width: 100%;
         </tbody>
       </table>
       <!-- End of Table -->
-  
+    
   </article>
 </section>
 </div>
